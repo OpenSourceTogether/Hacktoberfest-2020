@@ -28,4 +28,20 @@
             border-left: 1px solid lightgrey;
         }
     }
+    .footer {
+        position: fixed;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        bottom: 0;
+        right: 0;
+        color: white;
+        font-family: sans-serif;
+        .footerLink {
+            color: white;
+            text-decoration: none;
+        }
+        .footerLink:hover {
+            text-decoration: underline;
+        }
+    }
 }

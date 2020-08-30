@@ -15,6 +15,7 @@ export default function Layout({ children, noAppBar }) {
                 </AppBar>
             }
             {children}
+            <footer className={styles.footer}>Proudly hosted on <a className={styles.footerLink} href="https://vercel.com" target="_blank">▲Vercel</a></footer>
         </Container>
     )
 }

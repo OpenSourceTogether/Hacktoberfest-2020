@@ -2,14 +2,14 @@ import React from 'react'
 import NextHead from 'next/head'
 import { string } from 'prop-types'
 
-const defaultDescription = ''
-const defaultOGURL = ''
-const defaultOGImage = ''
+const defaultDescription = 'Open your first pull request here for the Hacktoberfest 2020 challenge and generate a personalized music certificate!'
+const defaultOGURL = 'https://hacktoberfest-2020.vercel.app/'
+const defaultOGImage = '/og-image.jpeg'
 
 const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
-    <title>{props.title || ''}</title>
+    <title>{props.title || 'Let\'s change the world together with Open source! Hacktoberfest 2020'}</title>
     <meta
       name="description"
       content={props.description || defaultDescription}
