@@ -1,6 +1,6 @@
 import ReactPlayer from 'react-player'
 
-export default function MusicPlayer() {
+export default function MusicPlayer({soundCloudUrl}) {
     return (
         <ReactPlayer
             config={{
@@ -13,7 +13,7 @@ export default function MusicPlayer() {
             width="100%"
             height="100%"
             volume={1}
-            url='https://soundcloud.com/nocopyrightsounds/cartoon-howling-ft-asena-ncs-release'
+            url={soundCloudUrl}
         />
     )
 }

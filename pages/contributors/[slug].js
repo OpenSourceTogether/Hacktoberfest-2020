@@ -22,80 +22,124 @@ export async function getStaticProps({ params }) {
 		throw new Error('Failed to fetch API')
 	}
 
+	const gitData = await fetch(`https://raw.githubusercontent.com/chandan-reddy-k/Hacktoberfest-2020/master/contributors.json`, {
+		method: 'GET',
+	})
+
+	const gitJson = await gitData.json()
+	if (gitData.status !== 200) {
+		console.error(gitJson)
+		throw new Error('Failed to fetch API')
+	}
+	const contributors = gitJson["contributors"]
+	let obj = contributors.find(o => o["github-username"] === `${params.slug}`);
+
 	return {
 		props: {
-			githubUser: json
+			githubUser: json,
+			contributorData: obj
 		}
 	}
 }
 
 export async function getStaticPaths() {
+	const res = await fetch(`https://raw.githubusercontent.com/chandan-reddy-k/Hacktoberfest-2020/master/contributors.json`, {
+		method: 'GET',
+	})
+
+	const json = await res.json()
+	if (res.status !== 200) {
+		console.error(json)
+		throw new Error('Failed to fetch API')
+	}
+
+	const contributors = json["contributors"]
+	let paths = []
+	contributors.map((item) => {
+		paths.push(`/contributors/${item["github-username"]}`)
+	})
 	return {
-		paths: [
-			'/contributors/chandan-reddy-k'
-		],
+		paths: paths,
 		fallback: true,
 	}
 }
 
 
-export default function Contributor({ githubUser }) {
+export default function Contributor({ githubUser, contributorData }) {
 	return (
 		<Layout noAppBar>
 			<Link href="/" as="/">
 				<HomeIcon className={styles.homeIcon} />
 			</Link>
-			<Grid className={styles.contributorContainer} container>
-				<Grid className={styles.contributorWrapper} container>
-					<Grid className={styles.personContainer} item xs={7}>
-						<Grid container>
-							<Grid item>
-								<PersonAvatar userImg={githubUser && githubUser.avatar_url} userName={githubUser && githubUser.name} />
-							</Grid>
-							<Grid item className={styles.detailsContainer}>
-								<Typography className={styles.personName}>
-									{githubUser && githubUser.name}
-								</Typography>
-								<a className={styles.githubLink} href={`${githubUser && githubUser.html_url}`} target="_blank">
-									<Grid container className={styles.githubContainer}>
-										<GitHubIcon className={styles.githubIcon} />
-										<Typography>
-											{githubUser && githubUser.login}
-										</Typography>
+			{
+				contributorData === undefined ?
+					<Grid container>
+						<Typography variant={"h1"}>
+							Please open a pull request in this
+						<a className={styles.hacktoberLink} href="https://github.com/chandan-reddy-k/Hacktoberfest-2020" target="_blank">
+								repository
+						</a>
+						and wait for it to be reviewed and merged.
+					</Typography>
+					</Grid>
+					:
+					<Grid className={styles.contributorContainer} container>
+						<Grid className={styles.contributorWrapper}
+							style={{
+								border: `2px solid ${contributorData["favourite-color"]}`,
+								boxShadow: `0px 0px 24px 1px ${contributorData["favourite-color"]}`
+							}}
+							container>
+							<Grid className={styles.personContainer} item xs={7}>
+								<Grid container>
+									<Grid item>
+										<PersonAvatar userImg={githubUser && githubUser.avatar_url} userName={githubUser && githubUser.name} />
 									</Grid>
-								</a>
-							</Grid>
-						</Grid>
-						<Grid container className={styles.certificateTextContainer}>
-							<Typography className={styles.certificateHeader}>
-								Cheers! Your PR has been merged 🎉
+									<Grid item className={styles.detailsContainer}>
+										<Typography className={styles.personName}>
+											{githubUser && githubUser.name}
+										</Typography>
+										<a className={styles.githubLink} href={`${githubUser && githubUser.html_url}`} target="_blank">
+											<Grid container className={styles.githubContainer}>
+												<GitHubIcon className={styles.githubIcon} />
+												<Typography>
+													{githubUser && githubUser.login}
+												</Typography>
+											</Grid>
+										</a>
+									</Grid>
+								</Grid>
+								<Grid container className={styles.certificateTextContainer}>
+									<Typography className={styles.certificateHeader}>
+										Cheers! Your PR has been merged 🎉
 							</Typography>
-							<Typography className={styles.certificateSubText}>
-								Thank you so much for your active participation and contribution to this open-source project.
-								You can track your progress and stats
+									<Typography className={styles.certificateSubText}>
+										Thank you so much for your active participation and contribution to this open-source project.
+										You can track your progress and stats
 								<a className={styles.hacktoberLink} href="https://hacktoberfest.digitalocean.com/" target="_blank">
-									here.
+											here.
 								</a>
 
-							</Typography>
-							<Typography className={styles.certificateSubText}>
-								Enjoy this personalized music certificate while you make other open-source contributions
-								and don't forget to share this
-								<a className={styles.hacktoberLink} href="https://hacktoberfest.digitalocean.com/" target="_blank">
-									repository
+									</Typography>
+									<Typography className={styles.certificateSubText}>
+										Enjoy this personalized music certificate while you make other open-source contributions
+										and don't forget to share this
+								<a className={styles.hacktoberLink} href="https://github.com/chandan-reddy-k/Hacktoberfest-2020" target="_blank">
+											repository
 								</a>
 								with your friends to help them make their first pull request.
 							</Typography>
+								</Grid>
+							</Grid>
+							<Grid className={styles.hacktoberfestContainer} item xs={5}>
+								<img src='/hacktoberfest-full.svg' className={styles.hacktoberfestImage} />
+								<Grid className={styles.musicPlayerContainer} container>
+									<MusicPlayer soundCloudUrl={contributorData["favourite-music"]} />
+								</Grid>
+							</Grid>
 						</Grid>
 					</Grid>
-					<Grid className={styles.hacktoberfestContainer} item xs={5}>
-						<img src='/hacktoberfest-full.svg' className={styles.hacktoberfestImage} />
-						<Grid className={styles.musicPlayerContainer} container>
-							<MusicPlayer />
-						</Grid>
-					</Grid>
-				</Grid>
-			</Grid>
+			}
 		</Layout>
 	)
 }

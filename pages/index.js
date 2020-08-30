@@ -5,15 +5,25 @@ import Chip from '@material-ui/core/Chip';
 import Link from 'next/link'
 import Layout from '../components/Layout';
 
-const contributorsArray = [
-  {
-    "github-username": "chandan-reddy-k",
-    "favourite-emoji": "🚀",
-    "favourite-music": "https://soundcloud.com/nocopyrightsounds/cartoon-howling-ft-asena-ncs-release",
-    "favourite-color": "#fff44f"
+export async function getStaticProps() {
+  const gitData = await fetch(`https://raw.githubusercontent.com/chandan-reddy-k/Hacktoberfest-2020/master/contributors.json`, {
+    method: 'GET',
+  })
+
+  const gitJson = await gitData.json()
+  if (gitData.status !== 200) {
+    console.error(gitJson)
+    throw new Error('Failed to fetch API')
   }
-]
-const Home = () => (
+  const contributors = gitJson["contributors"]
+  return {
+    props: {
+      contributors: contributors
+    },
+    revalidate: 1
+  }
+}
+const Home = ({ contributors }) => (
   <Layout>
     <Grid className={styles.welcomeGridWrapper} container>
       <Typography variant={"h1"} className={styles.welcomeText}>Let's change the world together with Open source!</Typography>
@@ -28,7 +38,7 @@ const Home = () => (
       <Typography className={styles.contributorsTitle}>Open source contributors:</Typography>
       <Typography className={styles.contributorsSubTitle}>Tip: 👉 Click on an username to view their personalized music certificate.</Typography>
       {
-        contributorsArray.map((item, index) => {
+        contributors && contributors.map((item, index) => {
           return (
             <Link href="/contributors/[slug]" key={index} as={`/contributors/${item["github-username"]}`}>
               <Chip

@@ -1,11 +1,10 @@
 # Hey! Welcome to the Hacktoberfest 2020
-✔️ This repo is still under basic development! Opening for contributions soon...
 
 <img alt="HF2020" src="https://user-images.githubusercontent.com/43699825/91566556-7e66fe80-e961-11ea-97d4-0195c6b479ba.png">
 
 <img width="100%" alt="Hacktoberfest" src="https://user-images.githubusercontent.com/43699825/91657789-8483e900-eae1-11ea-9625-8e8553c437be.png">
 
-:octocat: Open your first pull request for the Hacktoberfest 2020 challenge and generate a personalized music certificate! 
+## :octocat: Open your first pull request for the Hacktoberfest 2020 challenge and generate a personalized music certificate! 
 
 <img width="100%" alt="Hacktoberfest" src="https://user-images.githubusercontent.com/43699825/91657791-88b00680-eae1-11ea-8250-21d42b94af8d.png">
 
