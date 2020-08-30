@@ -1,0 +1,29 @@
+.fallingDownArrow span{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-bottom: 5px solid #C0C0C0;
+    border-right: 5px solid #C0C0C0;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.fallingDownArrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.fallingDownArrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}

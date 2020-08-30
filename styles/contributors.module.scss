@@ -1,0 +1,86 @@
+.contributorContainer {
+    height: 100vh;
+    align-items: center;
+    .contributorWrapper {
+        height: 90%;
+        border: 2px solid dodgerblue;
+        box-shadow: 0px 0px 24px 1px dodgerblue;
+        border-radius: 25px;
+        padding: 4rem;
+        .hacktoberfestContainer {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            .hacktoberfestImage {
+                width: 90%;
+            }
+        }
+        .musicPlayerContainer {
+            margin-top: 36px;
+            width: 80%;
+            height: auto;
+        }
+        .personContainer {
+            .detailsContainer {
+                padding-left: 1rem;
+                flex-direction: column;
+                align-self: center;
+                .personName {
+                    align-self: center;
+                    font-size: 2rem;
+                    margin-bottom: 8px;
+                }
+                .githubLink {
+                    color: white;
+                    text-decoration: none;
+                }
+                .githubContainer {
+                    opacity: 0.7;
+                    .githubIcon {
+                        margin-right: 8px;
+                    }
+                }
+                .githubContainer:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+            .certificateTextContainer {
+                padding-top: 32px;
+                .certificateHeader {
+                    font-size: 2rem;
+                }
+                .certificateSubText {
+                    font-size: 1.5rem;
+                    color: lightgray;
+                    padding-top: 16px;
+                    .hacktoberLink {
+                        color: rgba(255, 138, 226, 1);
+                        opacity: 0.8;
+                        text-decoration: none;
+                        margin: 0 8px;
+                        width: 100%;
+                    }
+                    .hacktoberLink:hover {
+                        opacity: 1;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .contributorWrapper:hover {
+        box-shadow: 0px 0px 36px 4px dodgerblue;
+    }
+}
+.homeIcon{
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    width: 2rem !important;
+    height: 2rem !important;
+}

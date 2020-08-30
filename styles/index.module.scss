@@ -1,0 +1,62 @@
+.welcomeGridWrapper {
+    height: 70vh;
+    align-content: center;
+    .welcomeText {
+        font-weight: bold;
+        text-align: center;
+        width: 70%;
+        font-size: 4rem;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    .welcomeSubText{
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        text-align: center;
+        font-size: 1.5rem;
+        width: 70%;
+        margin: 0 auto;
+        .githubLink{
+            margin-left: 8px;
+            color: rgba(255, 138, 226, 1);
+        }
+    }
+}
+.arrowContainer{
+    justify-content: center;
+    height: 30vh;
+}
+.contributorsListContainer{
+    width: 80%;
+    justify-content: center;
+    .contributorsTitle{
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+    .contributorsSubTitle{
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .userName{
+        font-size: 1.6rem;
+        margin: 1rem;
+        height: 4rem;
+        span{
+            mix-blend-mode: difference;
+            color: white;
+        }
+    }
+    .userName:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 16px 2px white;
+    }
+    .chipAvatar{
+        width: 3rem !important;
+        height: 3rem !important;
+        font-size: 2rem !important;
+        background: black;
+    }
+}
