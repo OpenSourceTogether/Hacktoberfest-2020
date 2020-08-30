@@ -10,6 +10,10 @@
 
 
 ## How to make your first pull request?
+
+0. 🌟Star this repo 🙏
+<img width="100%" alt="Star this repo for hacktoberfest" src="https://user-images.githubusercontent.com/43699825/91659079-0298bd80-eaeb-11ea-9e24-86a2468c4a1f.png">
+
 1. [Fork](https://github.com/chandan-reddy-k/Hacktoberfest-2020/fork) and clone the repository
 2. Create a new branch: `git checkout -b new-user`
 3. Add your details to  `contributors.json` file in the below format:
