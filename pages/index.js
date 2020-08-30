@@ -4,6 +4,7 @@ import FallingDownArrow from '../components/FallingDownArrow';
 import Chip from '@material-ui/core/Chip';
 import Link from 'next/link'
 import Layout from '../components/Layout';
+import Head from '../components/head';
 
 export async function getStaticProps() {
   const gitData = await fetch(`https://raw.githubusercontent.com/chandan-reddy-k/Hacktoberfest-2020/master/contributors.json`, {
@@ -25,6 +26,7 @@ export async function getStaticProps() {
 }
 const Home = ({ contributors }) => (
   <Layout>
+    <Head />
     <Grid className={styles.welcomeGridWrapper} container>
       <Typography variant={"h1"} className={styles.welcomeText}>Let's change the world together with Open source!</Typography>
       <Typography variant={"h2"} className={styles.welcomeSubText}>Hacktoberfest is open to everyone whether you're new to development, a student or a long-time contributor. Open your first pull request and generate a personalized music certificate
