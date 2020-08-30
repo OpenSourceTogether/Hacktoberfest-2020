@@ -25,8 +25,7 @@ export async function getStaticProps({ params }) {
 	return {
 		props: {
 			githubUser: json
-		},
-		revalidate: 1
+		}
 	}
 }
 
@@ -41,7 +40,6 @@ export async function getStaticPaths() {
 
 
 export default function Contributor({ githubUser }) {
-	console.log(githubUser)
 	return (
 		<Layout noAppBar>
 			<Link href="/" as="/">
@@ -52,17 +50,17 @@ export default function Contributor({ githubUser }) {
 					<Grid className={styles.personContainer} item xs={7}>
 						<Grid container>
 							<Grid item>
-								<PersonAvatar userImg={githubUser.avatar_url} userName={githubUser.name} />
+								<PersonAvatar userImg={githubUser && githubUser.avatar_url} userName={githubUser && githubUser.name} />
 							</Grid>
 							<Grid item className={styles.detailsContainer}>
 								<Typography className={styles.personName}>
-									{githubUser.name}
+									{githubUser && githubUser.name}
 								</Typography>
-								<a className={styles.githubLink} href={`${githubUser.html_url}`} target="_blank">
+								<a className={styles.githubLink} href={`${githubUser && githubUser.html_url}`} target="_blank">
 									<Grid container className={styles.githubContainer}>
 										<GitHubIcon className={styles.githubIcon} />
 										<Typography>
-											{githubUser.login}
+											{githubUser && githubUser.login}
 										</Typography>
 									</Grid>
 								</a>
