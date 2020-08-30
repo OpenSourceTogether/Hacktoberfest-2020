@@ -4,7 +4,7 @@ import { string } from 'prop-types'
 
 const defaultDescription = 'Open your first pull request here for the Hacktoberfest 2020 challenge and generate a personalized music certificate!'
 const defaultOGURL = 'https://hacktoberfest-2020.vercel.app/'
-const defaultOGImage = '/og-image.jpeg'
+const defaultOGImage = 'https://hacktoberfest-2020.vercel.app/og-image.jpeg'
 
 const Head = props => (
   <NextHead>
@@ -20,7 +20,7 @@ const Head = props => (
     <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
     <link rel="icon" href="/static/favicon.ico" />
     <meta property="og:url" content={props.url || defaultOGURL} />
-    <meta property="og:title" content={props.title || ''} />
+    <meta property="og:title" content={props.title || 'Let\'s change the world together with Open source! Hacktoberfest 2020'} />
     <meta
       property="og:description"
       content={props.description || defaultDescription}
