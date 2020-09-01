@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 import Head from '../components/head';
 
 export async function getStaticProps() {
-  const gitData = await fetch(`https://raw.githubusercontent.com/chandan-reddy-k/Hacktoberfest-2020/master/contributors.json`, {
+  const gitData = await fetch(`https://raw.githubusercontent.com/OpenSourceTogether/Hacktoberfest-2020/master/contributors.json`, {
     method: 'GET',
   })
 
@@ -30,7 +30,7 @@ const Home = ({ contributors }) => (
     <Grid className={styles.welcomeGridWrapper} container>
       <Typography variant={"h1"} className={styles.welcomeText}>Let's change the world together with Open source!</Typography>
       <Typography variant={"h2"} className={styles.welcomeSubText}>Hacktoberfest is open to everyone whether you're new to development, a student or a long-time contributor. Open your first pull request and generate a personalized music certificate
-      <a className={styles.githubLink} href="https://github.com/chandan-reddy-k/Hacktoberfest-2020" target="_blank">here</a>.
+      <a className={styles.githubLink} href="https://github.com/OpenSourceTogether/Hacktoberfest-2020" target="_blank">here</a>.
       </Typography>
     </Grid>
     <Grid container className={styles.arrowContainer}>

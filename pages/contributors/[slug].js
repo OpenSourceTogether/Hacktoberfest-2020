@@ -23,7 +23,7 @@ export async function getStaticProps({ params }) {
 		throw new Error('Failed to fetch API')
 	}
 
-	const gitData = await fetch(`https://raw.githubusercontent.com/chandan-reddy-k/Hacktoberfest-2020/master/contributors.json`, {
+	const gitData = await fetch(`https://raw.githubusercontent.com/OpenSourceTogether/Hacktoberfest-2020/master/contributors.json`, {
 		method: 'GET',
 	})
 
@@ -44,7 +44,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-	const res = await fetch(`https://raw.githubusercontent.com/chandan-reddy-k/Hacktoberfest-2020/master/contributors.json`, {
+	const res = await fetch(`https://raw.githubusercontent.com/OpenSourceTogether/Hacktoberfest-2020/master/contributors.json`, {
 		method: 'GET',
 	})
 
@@ -82,7 +82,7 @@ export default function Contributor({ githubUser, contributorData }) {
 					<Grid container>
 						<Typography variant={"h1"}>
 							Please open a pull request in this
-						<a className={styles.hacktoberLink} href="https://github.com/chandan-reddy-k/Hacktoberfest-2020" target="_blank">
+						<a className={styles.hacktoberLink} href="https://github.com/OpenSourceTogether/Hacktoberfest-2020" target="_blank">
 								repository
 						</a>
 						and wait for it to be reviewed and merged.
@@ -130,7 +130,7 @@ export default function Contributor({ githubUser, contributorData }) {
 									<Typography className={styles.certificateSubText}>
 										Enjoy this personalized music certificate while you make other open-source contributions
 										and don't forget to share this
-								<a className={styles.hacktoberLink} href="https://github.com/chandan-reddy-k/Hacktoberfest-2020" target="_blank">
+								<a className={styles.hacktoberLink} href="https://github.com/OpenSourceTogether/Hacktoberfest-2020" target="_blank">
 											repository
 								</a>
 								with your friends to help them make their first pull request.

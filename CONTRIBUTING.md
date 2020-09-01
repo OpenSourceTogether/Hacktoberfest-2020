@@ -1,6 +1,6 @@
 # Contribution Guidelines
 
-Welcome to the world of open-source! It is really **awesome** to have you here. Before start contributing with this project make sure you read our [Code Of Conduct](https://github.com/chandan-reddy-k/Hacktoberfest-2020/blob/master/CODE_OF_CONDUCT.md), it is really important to make this inclusive and open to everyone
+Welcome to the world of open-source! It is really **awesome** to have you here. Before start contributing with this project make sure you read our [Code Of Conduct](https://github.com/OpenSourceTogether/Hacktoberfest-2020/blob/master/CODE_OF_CONDUCT.md), it is really important to make this inclusive and open to everyone
 
 ## Looking to make your first PR?
 
@@ -8,7 +8,7 @@ This is a beginner friendly repository made specifically for Hacktoberfest that 
 
 ## Submitting a pull request
 
-1. [Fork](https://github.com/chandan-reddy-k/Hacktoberfest-2020/fork) and clone the repository
+1. [Fork](https://github.com/OpenSourceTogether/Hacktoberfest-2020/fork) and clone the repository
 2. Create a new branch: `git checkout -b my-branch-name`
 3. Append your details to  `contributors.json` file in the below format:
 ```
@@ -32,7 +32,7 @@ Note:
 ```
 "favourite-color" can be any color in hex format (example: #fff44f). You can pick a colour from https://www.google.com/search?q=color+picker
 ```
-4. Push to your fork and [submit a pull request](https://github.com/chandan-reddy-k/Hacktoberfest-2020/compare)
+4. Push to your fork and [submit a pull request](https://github.com/OpenSourceTogether/Hacktoberfest-2020/compare)
 5. Pat your self on the back and wait for your pull request to be reviewed and merged.
 
 ## Are you a designer / react developer?

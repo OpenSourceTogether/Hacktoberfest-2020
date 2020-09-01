@@ -14,7 +14,7 @@
 ### Step#0: 🌟 Star this repo 🙏
 <img width="100%" alt="Star this repo for hacktoberfest" src="https://user-images.githubusercontent.com/43699825/91659079-0298bd80-eaeb-11ea-9e24-86a2468c4a1f.png">
 
-### Step#1: [Fork](https://github.com/chandan-reddy-k/Hacktoberfest-2020/fork) and clone the repository
+### Step#1: [Fork](https://github.com/OpenSourceTogether/Hacktoberfest-2020/fork) and clone the repository
 ### Step#2: Create a new branch: `git checkout -b new-user`
 ### Step#3: Add your details to  `contributors.json` file in the below format:
 ```
@@ -45,7 +45,7 @@ Do not forget to add a trailing "," before adding above details.
 ```
 ### Step#4: Add your files `git add -A`
 ### Step#5: Commit your changes `git commit -m  "added myself"`
-### Step#6: Push to your fork `git push origin new-user` and [submit a pull request](https://github.com/chandan-reddy-k/Hacktoberfest-2020/compare).
+### Step#6: Push to your fork `git push origin new-user` and [submit a pull request](https://github.com/OpenSourceTogether/Hacktoberfest-2020/compare).
 ### Step#7: Pat your self on the back and wait for your pull request to be reviewed and merged.
 
 ## Are you a designer / react developer?
