@@ -1,0 +1,22 @@
+name: Validate JSON
+
+on: 
+  pull_request:
+    paths:
+    - 'contributors.json'
+
+jobs:
+  schema-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 13.x
+    - name: Install dependencies
+      run: npm install -g ajv-cli
+    - name: Run schema check
+      run:
+        ajv validate -s schema.json -d contributors.json --all-errors --error-data-path=property --verbose=true
