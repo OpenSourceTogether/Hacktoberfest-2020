@@ -1,70 +1,76 @@
 {
-    "contributors": [
-        {
-            "github-username": "chandan-reddy-k",
-            "favourite-emoji": "🚀",
-            "favourite-music": "https://soundcloud.com/nocopyrightsounds/cartoon-howling-ft-asena-ncs-release",
-            "favourite-color": "#fff44f"
-        },
-        {
-            "github-username": "ipshitag",
-            "favourite-emoji": "🐧",
-            "favourite-music": "https://soundcloud.com/oof_oofs-oof/lil-bloom-dead",
-            "favourite-color": "#6B6CE6"
-        },
-        {
-            "github-username": "saurabhs78",
-            "favourite-emoji": "😮",
-            "favourite-music": "https://soundcloud.com/anuv-jain/baarisheinstudio-key-and-shaker-tune-rough",
-            "favourite-color": "#212121"
-        },
-        {
-            "github-username": "yashwp",
-            "favourite-emoji": "😂",
-            "favourite-music": "https://soundcloud.com/kygo/ed-sheeran-i-see-fire-kygo",
-            "favourite-color": "#d7fcae"
-        },
-        {
-            "github-username": "AdityaTiwari2102",
-            "favourite-emoji": "🇮🇳",
-            "favourite-music": "https://soundcloud.com/mikey-mccleary/jumma-chumma-de-de",
-            "favourite-color": "#6688AA"
-        },
-        {
-            "github-username": "Mayank0255",
-            "favourite-emoji": "👨‍💻",
-            "favourite-music": "https://soundcloud.com/alexander23lol/idk-you-yet",
-            "favourite-color": "#FF4D5A"
-        },
-        {
-            "github-username": "jaidev810",
-            "favourite-emoji": "😁",
-            "favourite-music": "https://soundcloud.com/iamtrevordaniel/past-life",
-            "favourite-color": "#f28482"
-        },
-        {
-            "github-username": "Gurubalan-GIT",
-            "favourite-emoji": "⌚",
-            "favourite-music": "https://soundcloud.com/jackharlow/whats-poppin-feat-dababy-tory",
-            "favourite-color": "#41BC99"
-        },
-        {
-            "github-username": "Anurag5086",
-            "favourite-emoji": "🤙",
-            "favourite-music": "https://soundcloud.com/uiceheidd/lucid-dreams-forget-me",
-            "favourite-color": "#212121"
-        },
-        {
-            "github-username": "ARJUPTA",
-            "favourite-emoji": "⚙️",
-            "favourite-music": "https://soundcloud.com/halseymusic/without-me",
-            "favourite-color": "#800080"
-        },
-        {
-            "github-username": "debugleader",
-            "favourite-emoji": "😈",
-            "favourite-music": "https://soundcloud.com/halseymusic/without-me",
-            "favourite-color": "#808080"
-        }
-    ]
+  "contributors": [
+    {
+      "github-username": "chandan-reddy-k",
+      "favourite-emoji": "🚀",
+      "favourite-music": "https://soundcloud.com/nocopyrightsounds/cartoon-howling-ft-asena-ncs-release",
+      "favourite-color": "#fff44f"
+    },
+    {
+      "github-username": "ipshitag",
+      "favourite-emoji": "🐧",
+      "favourite-music": "https://soundcloud.com/oof_oofs-oof/lil-bloom-dead",
+      "favourite-color": "#6B6CE6"
+    },
+    {
+      "github-username": "saurabhs78",
+      "favourite-emoji": "😮",
+      "favourite-music": "https://soundcloud.com/anuv-jain/baarisheinstudio-key-and-shaker-tune-rough",
+      "favourite-color": "#212121"
+    },
+    {
+      "github-username": "yashwp",
+      "favourite-emoji": "😂",
+      "favourite-music": "https://soundcloud.com/kygo/ed-sheeran-i-see-fire-kygo",
+      "favourite-color": "#d7fcae"
+    },
+    {
+      "github-username": "AdityaTiwari2102",
+      "favourite-emoji": "🇮🇳",
+      "favourite-music": "https://soundcloud.com/mikey-mccleary/jumma-chumma-de-de",
+      "favourite-color": "#6688AA"
+    },
+    {
+      "github-username": "Mayank0255",
+      "favourite-emoji": "👨‍💻",
+      "favourite-music": "https://soundcloud.com/alexander23lol/idk-you-yet",
+      "favourite-color": "#FF4D5A"
+    },
+    {
+      "github-username": "jaidev810",
+      "favourite-emoji": "😁",
+      "favourite-music": "https://soundcloud.com/iamtrevordaniel/past-life",
+      "favourite-color": "#f28482"
+    },
+    {
+      "github-username": "Gurubalan-GIT",
+      "favourite-emoji": "⌚",
+      "favourite-music": "https://soundcloud.com/jackharlow/whats-poppin-feat-dababy-tory",
+      "favourite-color": "#41BC99"
+    },
+    {
+      "github-username": "Anurag5086",
+      "favourite-emoji": "🤙",
+      "favourite-music": "https://soundcloud.com/uiceheidd/lucid-dreams-forget-me",
+      "favourite-color": "#212121"
+    },
+    {
+      "github-username": "morkwood2",
+      "favourite-emoji": "😂",
+      "favourite-music": "https://soundcloud.com/rick-astley-official/never-gonna-give-you-up",
+      "favourite-color": "#b78acf"
+    },
+    {
+      "github-username": "ARJUPTA",
+      "favourite-emoji": "⚙️",
+      "favourite-music": "https://soundcloud.com/halseymusic/without-me",
+      "favourite-color": "#800080"
+    },
+    {
+      "github-username": "debugleader",
+      "favourite-emoji": "😈",
+      "favourite-music": "https://soundcloud.com/halseymusic/without-me",
+      "favourite-color": "#808080"
+    }
+  ]
 }
