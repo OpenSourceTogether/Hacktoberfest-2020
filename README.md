@@ -27,7 +27,7 @@
 ```
 ## Note:
 ```
-Do not forget to add a trailing "," before adding above details. 
+Do not forget to add a trailing "," before adding above details and please append your details to the bottom of the json file only.
 ```
 <img width="100%" alt="Add a trailing comma" src="https://user-images.githubusercontent.com/43699825/91692126-7c31b980-eb86-11ea-899f-1fa9a7bc6f0f.png">
 
