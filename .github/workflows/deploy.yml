@@ -1,0 +1,11 @@
+on:
+  schedule:
+  - cron: "0 0 11,23 * * *"
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+    - name: curl
+      uses: wei/curl@v1
+      with:
+        args: -X POST ${{secrets.VERCEL_DEPLOY_HOOK}}

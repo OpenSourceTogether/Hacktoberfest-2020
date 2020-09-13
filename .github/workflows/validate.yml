@@ -3,7 +3,7 @@ name: Validate JSON
 on: 
   pull_request:
     paths:
-    - 'contributors.json'
+    - 'contributors/**'
 
 jobs:
   schema-check:
@@ -19,4 +19,4 @@ jobs:
       run: npm install -g ajv-cli
     - name: Run schema check
       run:
-        ajv validate -s schema.json -d contributors.json --all-errors --error-data-path=property --verbose=true
+        ajv validate -s schema.json -d "contributors/*.json" --all-errors --error-data-path=property --verbose=true
