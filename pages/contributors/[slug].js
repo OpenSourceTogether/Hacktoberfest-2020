@@ -70,7 +70,7 @@ export default function Contributor({ githubUser, contributorData }) {
 			<Head
 				title={`${githubUser && githubUser.name}'s personalized music card | Hactoberfest 2020`}
 				description={`Checkout ${githubUser && githubUser.name}'s personalized music card generated for contributing to the open-source community | Hactoberfest 2020`}
-				url={`https://hacktoberfest.chandan.dev/contributors/${githubUser && githubUser.login}`}
+				url={`https://hacktober-fest-2020.vercel.app/contributors/${githubUser && githubUser.login}`}
 			/>
 			<Link href="/" as="/">
 				<HomeIcon className={styles.homeIcon} />

@@ -58,7 +58,7 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 <details>
 <summary>Why is my profile not showing up in the website?</summary>
 <br>
-    After you raise a pull request, wait for it to be approved and merged to the `master` branch. Upon successful merge, your details will show up automatically within 6-12 hrs on the website (https://hacktoberfest.chandan.dev).
+    After you raise a pull request, wait for it to be approved and merged to the `master` branch. Upon successful merge, your details will show up automatically within 6-12 hrs on the website (https://hacktober-fest-2020.vercel.app).
 <br>
 </details>
 
