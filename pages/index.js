@@ -5,21 +5,21 @@ import Chip from '@material-ui/core/Chip';
 import Link from 'next/link'
 import Layout from '../components/Layout';
 import Head from '../components/head';
+import fs from 'fs'
+import path from 'path'
 
 export async function getStaticProps() {
-  const gitData = await fetch(`https://raw.githubusercontent.com/OpenSourceTogether/Hacktoberfest-2020/master/contributors.json`, {
-    method: 'GET',
+  const contributorsDirectory = path.join(process.cwd(), 'contributors')
+  const contributorFiles = fs.readdirSync(contributorsDirectory)
+  let contributorsArray = []
+  contributorFiles.map(filename => {
+    const filePath = path.join(contributorsDirectory, filename)
+    const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+    contributorsArray.push(fileContents)
   })
-
-  const gitJson = await gitData.json()
-  if (gitData.status !== 200) {
-    console.error(gitJson)
-    throw new Error('Failed to fetch API')
-  }
-  const contributors = gitJson["contributors"]
   return {
     props: {
-      contributors: contributors
+      contributors: contributorsArray
     },
     revalidate: 1
   }

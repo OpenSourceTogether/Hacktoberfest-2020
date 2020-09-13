@@ -7,6 +7,9 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import HomeIcon from '@material-ui/icons/Home';
 import Link from 'next/link'
 import Head from '../../components/head'
+import fs from 'fs'
+import path from 'path'
+
 const MusicPlayer = dynamic(
 	() => import('../../components/MusicPlayer'),
 	{ ssr: false }
@@ -22,18 +25,16 @@ export async function getStaticProps({ params }) {
 		console.error(json)
 		throw new Error('Failed to fetch API')
 	}
-
-	const gitData = await fetch(`https://raw.githubusercontent.com/OpenSourceTogether/Hacktoberfest-2020/master/contributors.json`, {
-		method: 'GET',
+	const contributorsDirectory = path.join(process.cwd(), 'contributors')
+	const contributorFiles = fs.readdirSync(contributorsDirectory)
+	let contributorsArray = []
+	contributorFiles.map(filename => {
+		const filePath = path.join(contributorsDirectory, filename)
+		const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+		contributorsArray.push(fileContents)
 	})
-
-	const gitJson = await gitData.json()
-	if (gitData.status !== 200) {
-		console.error(gitJson)
-		throw new Error('Failed to fetch API')
-	}
-	const contributors = gitJson["contributors"]
-	let obj = contributors.find(o => o["github-username"] === `${params.slug}`);
+	
+	let obj = contributorsArray.find(o => o["github-username"] === `${params.slug}`);
 
 	return {
 		props: {
@@ -44,19 +45,16 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-	const res = await fetch(`https://raw.githubusercontent.com/OpenSourceTogether/Hacktoberfest-2020/master/contributors.json`, {
-		method: 'GET',
+	const contributorsDirectory = path.join(process.cwd(), 'contributors')
+	const contributorFiles = fs.readdirSync(contributorsDirectory)
+	let contributorsArray = []
+	contributorFiles.map(filename => {
+		const filePath = path.join(contributorsDirectory, filename)
+		const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+		contributorsArray.push(fileContents)
 	})
-
-	const json = await res.json()
-	if (res.status !== 200) {
-		console.error(json)
-		throw new Error('Failed to fetch API')
-	}
-
-	const contributors = json["contributors"]
 	let paths = []
-	contributors.map((item) => {
+	contributorsArray.map((item) => {
 		paths.push(`/contributors/${item["github-username"]}`)
 	})
 	return {
@@ -149,4 +147,3 @@ export default function Contributor({ githubUser, contributorData }) {
 		</Layout>
 	)
 }
-
