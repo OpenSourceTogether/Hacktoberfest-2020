@@ -62,4 +62,11 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 <br>
 </details>
 
+<details>
+<summary>When should I make a pull request?</summary>
+<br>
+   You are welcomed to raise a PR anytime but if you are here for increasing your count for hacktoberfest, star this repo now and raise a PR between OCT 1st to 31st.
+<br>
+</details>
+
 ---
