@@ -22,7 +22,7 @@
 {
     "github-username": "YOUR-GITHUB-USERNAME",
     "favourite-emoji": "YOUR-FAVOURITE-EMOJI",
-    "favourite-music": "YOUR-FAVOURITE-MUSIC-URL,
+    "favourite-music": "YOUR-FAVOURITE-MUSIC-URL",
     "favourite-color": "YOUR-FAVOURITE-COLOR"
 }
 ```
