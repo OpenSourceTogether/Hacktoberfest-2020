@@ -1,0 +1,6 @@
+{
+    "github-username": "akgupta0777",
+    "favourite-emoji": "😏",
+    "favourite-music": "https://soundcloud.com/kronopage/aaron-smith-dancin-remix-by",
+    "favourite-color": "#28DF99"
+}
