@@ -79,3 +79,35 @@
     width: 2rem !important;
     height: 2rem !important;
 }
+
+
+@media screen and (max-width: 991px) {
+    .homeIcon{
+        left: 30px;
+    }
+    .contributorWrapper{
+        height: 100vh !important;
+        overflow: scroll;
+        padding: 2rem !important;
+    }
+    .personContainer{
+        width: 100% !important;
+    }
+    .certificateHeader {
+        font-size: 1rem !important;
+        text-align: center;
+        width: 100% !important;
+    }
+    .certificateSubText {
+        font-size: 1rem !important;
+        text-align: center;
+    }
+    .personDetailContainer{
+        justify-content: center;
+        text-align: center;
+    }
+    .hacktoberfestContainer{
+        margin-top: 24px !important;
+        height: auto !important;
+    }
+}

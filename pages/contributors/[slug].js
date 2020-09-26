@@ -94,8 +94,8 @@ export default function Contributor({ githubUser, contributorData }) {
 								boxShadow: `0px 0px 24px 1px ${contributorData["favourite-color"]}`
 							}}
 							container>
-							<Grid className={styles.personContainer} item xs={7}>
-								<Grid container>
+							<Grid className={styles.personContainer} item md={7} xs={12}>
+								<Grid container className={styles.personDetailContainer}>
 									<Grid item>
 										<PersonAvatar userImg={githubUser && githubUser.avatar_url} userName={githubUser && githubUser.name} />
 									</Grid>
@@ -116,7 +116,7 @@ export default function Contributor({ githubUser, contributorData }) {
 								<Grid container className={styles.certificateTextContainer}>
 									<Typography className={styles.certificateHeader}>
 										Cheers! Your PR has been merged 🎉
-							</Typography>
+									</Typography>
 									<Typography className={styles.certificateSubText}>
 										Thank you so much for your active participation and contribution to this open-source project.
 										You can track your progress and stats
@@ -135,7 +135,7 @@ export default function Contributor({ githubUser, contributorData }) {
 							</Typography>
 								</Grid>
 							</Grid>
-							<Grid className={styles.hacktoberfestContainer} item xs={5}>
+							<Grid className={styles.hacktoberfestContainer} item md={5} xs={12}>
 								<img src='/hacktoberfest-full.svg' className={styles.hacktoberfestImage} />
 								<Grid className={styles.musicPlayerContainer} container>
 									<MusicPlayer soundCloudUrl={contributorData["favourite-music"]} />
