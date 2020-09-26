@@ -1,0 +1,55 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "Hacktoberfest", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"github-username",
+		"favourite-emoji",
+		"favourite-music",
+		"favourite-color"
+	],
+	"properties": {
+		"github-username": {
+			"$id": "#root/github-username", 
+			"title": "Github-username", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"chandan-reddy-k"
+			],
+			"pattern": "^\\S*$"
+		},
+		"favourite-emoji": {
+			"$id": "#root/favourite-emoji", 
+			"title": "Favourite-emoji", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"🚀"
+			],
+			"pattern": "^.*$"
+		},
+		"favourite-music": {
+			"$id": "#root/favourite-music", 
+			"title": "Favourite-music", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"https://soundcloud.com/nocopyrightsounds/cartoon-howling-ft-asena-ncs-release"
+			],
+			"pattern": "^https:\/\/soundcloud.com?"
+		},
+		"favourite-color": {
+			"$id": "#root/favourite-color", 
+			"title": "Favourite-color", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"#fff44f"
+			],
+			"pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+		}
+	}
+}
