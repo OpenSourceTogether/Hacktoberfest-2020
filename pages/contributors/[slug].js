@@ -15,7 +15,8 @@ const MusicPlayer = dynamic(
 	{ ssr: false }
 )
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
+
 	const res = await fetch(`https://api.github.com/users/${params.slug}`, {
 		method: 'GET',
 	})
@@ -43,26 +44,6 @@ export async function getStaticProps({ params }) {
 		}
 	}
 }
-
-export async function getStaticPaths() {
-	const contributorsDirectory = path.join(process.cwd(), 'contributors')
-	const contributorFiles = fs.readdirSync(contributorsDirectory)
-	let contributorsArray = []
-	contributorFiles.map(filename => {
-		const filePath = path.join(contributorsDirectory, filename)
-		const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
-		contributorsArray.push(fileContents)
-	})
-	let paths = []
-	contributorsArray.map((item) => {
-		paths.push(`/contributors/${item["github-username"]}`)
-	})
-	return {
-		paths: paths,
-		fallback: true,
-	}
-}
-
 
 export default function Contributor({ githubUser, contributorData }) {
 	return (
