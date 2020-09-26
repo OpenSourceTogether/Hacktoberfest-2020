@@ -37,7 +37,7 @@ const Home = ({ contributors }) => ( <
     Typography variant = { "h2" }
     className = { styles.welcomeSubText } > Hacktoberfest is open to everyone whether you 're new to development, a student or a long-time contributor. Open your first pull request and generate a personalized music certificate <
     a className = { styles.githubLink }
-    href = "https://github.com/domitechnshimba/Hacktoberfest-2020"
+    href = "https://github.com/domitechnshimba /Hacktoberfest-2020"
     target = "_blank" > here < /a>. < /
     Typography > <
     /Grid> <
