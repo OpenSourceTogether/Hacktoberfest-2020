@@ -69,4 +69,21 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 <br>
 </details>
 
+<details>
+<summary>Are pull requests counted towards Hacktoberfest 2020?</summary>
+<br>
+   This repo is to welcome beginners to Github and the opensource community by helping them learn how to make their first PR and contributions to open source!
+<br>
+That said, only high-quality contributions and pull requests that add value to Open Source projects are part of the the core values of Hacktoberfest, so repositories like this one and others which allow users to quickly gain a PR toward completing the challenge might be excluded from the Hacktoberfest.
+<br>
+So we highly recommend you to contribute in a meaningful way to other Hacktoberfest issues and not rely on this repository alone.
+</details>
+
 ---
+
+### ⚠️ Disclaimer:
+ This repo is to welcome beginners to Github and the opensource community by helping them learn how to make their first PR and contributions to open source!
+<br>
+That said, only high-quality contributions and pull requests that add value to Open Source projects are part of the the [core values](https://hacktoberfest.digitalocean.com/details) of Hacktoberfest, so repositories like this one and others which allow users to quickly gain a PR toward completing the challenge might be excluded from the Hacktoberfest.
+<br>
+So we highly recommend you to contribute in a meaningful way to other [Hacktoberfest issues](https://hacktoberfest.digitalocean.com/#projects) and not rely on this repository alone.
