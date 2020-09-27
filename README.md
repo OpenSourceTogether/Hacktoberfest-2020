@@ -53,7 +53,7 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 
 [https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)
 
-Checkout this Hacktoberfest video:
+### Checkout this Hacktoberfest video:
 [![Alt text](https://img.youtube.com/vi/mll-akn8Gqs/0.jpg)](https://www.youtube.com/watch?v=mll-akn8Gqs)
 
 ## FAQs
