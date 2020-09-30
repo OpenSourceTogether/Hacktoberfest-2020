@@ -1,0 +1,6 @@
+{
+    "github-username": "LipsaChinmayeeHota",
+    "favourite-emoji": "??",
+    "favourite-music :  "https://soundcloud.com/internetmoneyrecords/17-lemonade-ft-don-toliver-gunna-nav-master"
+    "favourite-color": " #fff44f"
+}
