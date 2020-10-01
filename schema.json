@@ -29,8 +29,6 @@
 			"examples": [
 				"🚀"
 			],
-			"maxLength": 1,
-      		"minLength": 1,
 			"pattern": "^.*$"
 		},
 		"favourite-music": {
