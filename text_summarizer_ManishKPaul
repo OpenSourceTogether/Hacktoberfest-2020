@@ -1,0 +1,30 @@
+from gensim.summarization.summarizer import summarize
+from gensim.summarization import keywords
+import wikipedia
+import speech_recognition as sr
+
+wikisearch = wikipedia.page("Chandrayaan-2")
+wikicontent = wikisearch.content
+nlp = en_core_web_sm.load()
+doc = nlp(wikicontent)
+f.write(wikicontent)
+f.close()
+
+summary=summarize(wikicontent, ratio = 0.06)
+print("summary:")
+print(summary)
+
+print("enter choice A for audio and S for summary")
+ch = input()
+if ch == 'A':
+    r = sr.recognizer()
+    with sr.Microphone() as source:
+        print("speak something.")
+        audio = r.listen(source)
+        print("okay,time up.")
+        try:
+            print("text:"+r.recognize_google(audio))
+        except:
+            pass
+if ch == 'S':
+    print(summary)
