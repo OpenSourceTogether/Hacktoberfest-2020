@@ -1,7 +1,2 @@
-node_modules
-.next
-.DS_Store
-out
-contributors/*
-
-!contributors/*.json
+node_modules/
+.vs/
