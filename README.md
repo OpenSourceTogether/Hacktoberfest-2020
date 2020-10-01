@@ -18,7 +18,7 @@
 <a href="https://github.com/chandan-reddy-k" aria-label="Follow @chandan-reddy-k on GitHub"><img  src="https://img.shields.io/badge/Follow👉-@chandan--reddy--k-green?style=for-the-badge"  />
 </a>
 <br>
-(Follow me on github) 
+(Follow me on github - this motivates me to review & merge pull requests quicker.) 
 ### Step#3: [Fork](https://github.com/OpenSourceTogether/Hacktoberfest-2020/fork) and clone the repository
 ### Step#4: Create a new branch: `git checkout -b new-user`
 ### Step#5: Create a new file in `contributors` folder and name the file as `YOUR-GITHUB-USERNAME.json`. Do not forget to include the `.json` as file extension.
