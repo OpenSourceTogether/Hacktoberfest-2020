@@ -25,10 +25,10 @@
 ### Step#6: Add your details to `YOUR-GITHUB-USERNAME.json` file in the below format:
 ```
 {
-    "github-username": "YOUR-GITHUB-USERNAME",
-    "favourite-emoji": "YOUR-FAVOURITE-EMOJI",
-    "favourite-music": "YOUR-FAVOURITE-MUSIC-URL",
-    "favourite-color": "YOUR-FAVOURITE-COLOR"
+    "github-username": "ankit404",
+    "favourite-emoji": "😄",
+    "favourite-music": "https://soundcloud.com/eminemofficial/not-afraid-2",
+    "favourite-color": "#0b855a"
 }
 ```
 ## Note:
