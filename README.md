@@ -1,4 +1,5 @@
-# Hey! Welcome to the Hacktoberfest 2020
+# Hey! Welcome to the Hacktoberfest of  2020
+# participate in this hactober fest 2020 to grab a free tshirt.
 
 <img alt="HF2020" src="https://user-images.githubusercontent.com/43699825/91566556-7e66fe80-e961-11ea-97d4-0195c6b479ba.png">
 
