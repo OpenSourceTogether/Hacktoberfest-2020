@@ -1,5 +1,12 @@
 # Hey! Welcome to the Hacktoberfest 2020
 
+### ⚠️ Disclaimer (Important):
+ This repo is to welcome beginners to Github and the opensource community by helping them learn how to make their first PR and contributions to open source!
+<br>
+That said, only high-quality contributions and pull requests that add value to Open Source projects are part of the the [core values](https://hacktoberfest.digitalocean.com/details) of Hacktoberfest, so repositories like this one and others which allow users to quickly gain a PR toward completing the challenge are **excluded** from the Hacktoberfest and your **Pull requests here won’t count** toward Hacktoberfest.
+<br>
+So, try contributing in a meaningful way to other [Hacktoberfest issues](https://hacktoberfest.digitalocean.com/#projects) and if you still want to generate a music certificate or add yourself to [hacktober-fest-2020.vercel.app](https://hacktober-fest-2020.vercel.app/) go ahead and raise a PR.
+
 <img alt="HF2020" src="https://user-images.githubusercontent.com/43699825/91566556-7e66fe80-e961-11ea-97d4-0195c6b479ba.png">
 
 <img width="100%" alt="Hacktoberfest" src="https://user-images.githubusercontent.com/43699825/91657789-8483e900-eae1-11ea-9625-8e8553c437be.png">
@@ -88,13 +95,6 @@ So we highly recommend you to contribute in a meaningful way to other Hacktoberf
 </details>
 
 ---
-
-### ⚠️ Disclaimer:
- This repo is to welcome beginners to Github and the opensource community by helping them learn how to make their first PR and contributions to open source!
-<br>
-That said, only high-quality contributions and pull requests that add value to Open Source projects are part of the the [core values](https://hacktoberfest.digitalocean.com/details) of Hacktoberfest, so repositories like this one and others which allow users to quickly gain a PR toward completing the challenge might be excluded from the Hacktoberfest.
-<br>
-So we highly recommend you to contribute in a meaningful way to other [Hacktoberfest issues](https://hacktoberfest.digitalocean.com/#projects) and not rely on this repository alone.
 
 ## 🤩 Awesome contributors:
 <a href="https://github.com/OpenSourceTogether/Hacktoberfest-2020/graphs/contributors">
