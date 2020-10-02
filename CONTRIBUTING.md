@@ -13,10 +13,10 @@ This is a beginner friendly repository made specifically for Hacktoberfest that 
 3. Append your details to  `contributors.json` file in the below format:
 ```
 {
-    "github-username": "YOUR-GITHUB-USERNAME",
-    "favourite-emoji": "YOUR-FAVOURITE-EMOJI",
-    "favourite-music": "YOUR-FAVOURITE-MUSIC-URL,
-    "favourite-color": "YOUR-FAVOURITE-COLOR"
+    "github-username": "aayushi2883",
+    "favourite-emoji": "🥰",
+    "favourite-music": "https://soundcloud.com/iamcardib/wap-feat-megan-thee-stallion",
+    "favourite-color": "#fff44f"
 }
 ```
 Note:
