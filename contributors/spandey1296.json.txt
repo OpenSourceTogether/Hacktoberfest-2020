@@ -1,0 +1,6 @@
+{
+    "github-username": "spandey1296",
+    "favourite-emoji": "🧑‍💻",
+    "favourite-music": "https://soundcloud.com/pslwave/hennydance",
+    "favourite-color": "#f51b1b"
+}
