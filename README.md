@@ -3,7 +3,7 @@
 ### ⚠️ Disclaimer (Important):
  This repo is to welcome beginners to Github and the opensource community by helping them learn how to make their first PR and contributions to open source!
 <br>
-That said, only high-quality contributions and pull requests that add value to Open Source projects are part of the the [core values](https://hacktoberfest.digitalocean.com/details) of Hacktoberfest, so repositories like this one and others which allow users to quickly gain a PR toward completing the challenge are **excluded** from the Hacktoberfest and your **Pull requests here won’t count** toward Hacktoberfest.
+That said, only high-quality contributions and pull requests that add value to Open Source projects are part of the the [core values](https://hacktoberfest.digitalocean.com/details) of Hacktoberfest, so repositories like this one and others which allow users to quickly gain a PR toward completing the challenge are **excluded** from the Hacktoberfest and your <ins>**Pull requests here won’t count toward Hacktoberfest**</ins>.
 <br>
 So, try contributing in a meaningful way to other [Hacktoberfest issues](https://hacktoberfest.digitalocean.com/#projects) and if you still want to generate a music certificate or add yourself to [hacktober-fest-2020.vercel.app](https://hacktober-fest-2020.vercel.app/) go ahead and raise a PR.
 
