@@ -23,7 +23,6 @@ Note:
 ```
 "github-username" should be same as the one you're making the pull request from. 
 ```
-```
 "favourite-emoji" can be any emoji supported by modern browsers. You can pick one from https://emojipedia.org/
 ```
 ```
