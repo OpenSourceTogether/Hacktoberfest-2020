@@ -1,5 +1,5 @@
 # Hey! Welcome to the Hacktoberfest 2020
-hlo
+
 ### ⚠️ Disclaimer (Important):
  This repo is to welcome beginners to Github and the opensource community by helping them learn how to make their first PR and contributions to open source!
 <br>
