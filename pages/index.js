@@ -14,8 +14,13 @@ export async function getStaticProps() {
   let contributorsArray = []
   contributorFiles.map(filename => {
     const filePath = path.join(contributorsDirectory, filename)
-    const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
-    contributorsArray.push(fileContents)
+    try {
+      const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+      contributorsArray.push(fileContents)
+    }
+    catch(e) {
+      console.log('Error reading file -' + filename)
+    }
   })
   return {
     props: {
