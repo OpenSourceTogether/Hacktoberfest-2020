@@ -42,7 +42,7 @@ const Home = ({ contributors }) => (
       <FallingDownArrow />
     </Grid>
     <Grid container className={styles.contributorsListContainer}>
-      <Typography className={styles.contributorsTitle}>Open source contributors:</Typography>
+      <Typography className={styles.contributorsTitle}>{Math.floor(contributors.length/100)*100}+ contributors:</Typography>
       <Typography className={styles.contributorsSubTitle}>Tip: 👉 Click on an username to view their personalized music certificate.</Typography>
       {
         contributors && contributors.map((item, index) => {

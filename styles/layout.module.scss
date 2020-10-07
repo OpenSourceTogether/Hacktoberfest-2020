@@ -2,8 +2,10 @@
     color: white;
     .appbar {
         background: #0C253D;
+        box-shadow: none !important;
         .toolbarRoot {
             justify-content: center;
+            box-shadow: none !important;
         }
         .hacktoberfestLogo {
             height: 60px;
