@@ -51,9 +51,9 @@ So, try contributing in a meaningful way to other [Hacktoberfest issues](https:/
 ```
 "favourite-color" can be any color in hex format (example: #fff44f). You can pick a colour from https://www.google.com/search?q=color+picker
 ```
-### Step#7: Add your files `git add -A`
-### Step#8: Commit your changes `git commit -m  "added myself"`
-### Step#9: Push to your fork `git push origin new-user` and [submit a pull request](https://github.com/OpenSourceTogether/Hacktoberfest-2020/compare).
+### Step#7: Add your files ```git add -A```
+### Step#8: Commit your changes ```git commit -m  "added myself"```
+### Step#9: Push to your fork ```git push origin new-user``` and [submit a pull request](https://github.com/OpenSourceTogether/Hacktoberfest-2020/compare).
 ### Step#10: Pat your self on the back and wait for your pull request to be reviewed and merged.
 
 ## Are you a designer / react developer?
