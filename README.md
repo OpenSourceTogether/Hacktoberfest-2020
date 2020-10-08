@@ -1,7 +1,7 @@
 # Hey! Welcome to the Hacktoberfest 2020
 
-### ⚠️ Disclaimer (Important):
- This repo is to welcome beginners to Github and the opensource community by helping them learn how to make their first PR and contributions to open source!
+### ⚠️ Disclaimer (NOTICE):
+ This repo is to welcome beginners to Github and the opensource community by helping them learn how to make their first PR and contributions to open source and win a cool swag !
 <br>
 That said, only high-quality contributions and pull requests that add value to Open Source projects are part of the the [core values](https://hacktoberfest.digitalocean.com/details) of Hacktoberfest, so repositories like this one and others which allow users to quickly gain a PR toward completing the challenge are **excluded** from the Hacktoberfest and your <ins>**Pull requests here won’t count toward Hacktoberfest**</ins>.
 <br>
@@ -53,7 +53,7 @@ So, try contributing in a meaningful way to other [Hacktoberfest issues](https:/
 ```
 ### Step#7: Add your files `git add -A`
 ### Step#8: Commit your changes `git commit -m  "added myself"`
-### Step#9: Push to your fork `git push origin new-user` and [submit a pull request](https://github.com/OpenSourceTogether/Hacktoberfest-2020/compare).
+### Step#9: Click on a fork  `git push origin new-user` and [submit a pull request](https://github.com/OpenSourceTogether/Hacktoberfest-2020/compare).
 ### Step#10: Pat your self on the back and wait for your pull request to be reviewed and merged.
 
 ## Are you a designer / react developer?
