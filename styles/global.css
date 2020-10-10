@@ -4,3 +4,6 @@ html {
 body {
     margin: 0;
 }
+iframe{
+    background : #ddd;
+}
