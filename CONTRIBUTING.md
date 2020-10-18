@@ -8,7 +8,7 @@ This is a beginner friendly repository made specifically for Hacktoberfest that 
 
 ## Submitting a pull request
 
-1. [Fork](https://github.com/OpenSourceTogether/Hacktoberfest-2020/fork) and clone the repository
+1. [Fork](https://github.com/OpenSourceTogether/Hacktoberfest-2020/fork) and clone the repository 
 2. Create a new branch: `git checkout -b my-branch-name`
 3. Append your details to  `contributors.json` file in the below format:
 ```
