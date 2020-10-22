@@ -31,10 +31,16 @@ export async function getServerSideProps({ params }) {
 	let contributorsArray = []
 	contributorFiles.map(filename => {
 		const filePath = path.join(contributorsDirectory, filename)
-		const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
-		contributorsArray.push(fileContents)
+		try {
+			const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+			contributorsArray.push(fileContents)
+		}
+		catch (e) {
+			console.log('Error reading file -' + filename)
+		}
+
 	})
-	
+
 	let obj = contributorsArray.find(o => o["github-username"] === `${params.slug}`);
 
 	return {
