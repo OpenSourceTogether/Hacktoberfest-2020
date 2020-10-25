@@ -19,3 +19,5 @@ export default function App({ Component, pageProps }) {
         </>
     );
 }
+def samyak():
+    print("welcome to the hacktober")
