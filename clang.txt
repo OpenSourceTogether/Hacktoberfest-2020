@@ -1,0 +1,24 @@
+//swapping two variables using C language
+// Here's the code
+
+#include<stdio.h>
+
+int main(){
+
+double a ,b;
+
+printf("Enter numbers to be interchanged=");
+
+scanf("%lf %lf", &a, &b);
+
+a=a+b;
+
+b=a-b;
+
+a=a-b;
+
+printf("\nAfter swapping the numbers, \n the first number is=%lf \n the second number is=%lf", a,b); 
+
+return 0;}
+
+github: https://github.com/thetarandhiman
