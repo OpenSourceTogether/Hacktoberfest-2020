@@ -12,8 +12,8 @@
 	],
 	"properties": {
 		"github-username": {
-			"$id": "#root/github-username", 
-			"title": "Github-username", 
+			"$id": "#root/github username", 
+			"title": "Github username", 
 			"type": "string",
 			"default": "",
 			"examples": [
@@ -32,8 +32,8 @@
 			"pattern": "^.*$"
 		},
 		"favourite-music": {
-			"$id": "#root/favourite-music", 
-			"title": "Favourite-music", 
+			"$id": "#root/favourite music", 
+			"title": "Favourite music", 
 			"type": "string",
 			"default": "",
 			"examples": [
